@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {}
+
+.dock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: block;
+    text-align: center;
+}
