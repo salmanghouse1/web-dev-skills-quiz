@@ -13,4 +13,20 @@
 .content {
     display: block;
     text-align: center;
+    padding: 10% 15% 0 15%;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    background: darkorchid;
+    color: white;
+    border-radius: 5px;
+    padding: 0 1em 0 1em;
 }
