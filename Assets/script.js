@@ -13,4 +13,88 @@
 11.if data-atr is wrong or not equal to the answer string, deduct some time
 12.if time === 0, it is game over text content then restart.
 13.after each answer store a counter var and increment it, if it equals 5 then show the high scores function and enter name, then if name is entered show the highscores using function call and pass the arguments in
-14.clear scores will set the text content of the ol li to blank
+14.clear scores will set the text content of the ol li to blank*/
+
+const answers1 = ['strings', 'alerts', 'booleans', 'numbers'];
+const answers2 = ['quotes', 'curly braces', 'parenthesis', 'square brackets'];
+const answers3 = ['numbers of strings', 'other arrays', 'booleans', 'all of the above'];
+const answers4 = ['commas', 'curly brackets', 'quotes', 'parenthesis'];
+
+var body = document.querySelector('body');
+
+let questionListItem = ['', '', '', ''];
+
+
+var item = "a";
+
+// Functions
+var content = document.querySelector('#content');
+
+questions = ['Commonly used Data Types Do not include...', '', '', '', ''];
+currentPage = 0;
+
+function nextScreen(questionsArray, answersArray) {
+
+
+    while (document.querySelector('#content').firstChild) {
+        document.querySelector('#content').removeChild(document.querySelector('#content').firstChild);
+        console.log('removed body children');
+    }
+    var heading = document.createElement('h1');
+    document.querySelector('#content').appendChild(heading);
+    var questionsHeadingHolder = document.querySelector('h1');
+    questionsToBeApended = questionsHeadingHolder.textContent = questionsArray;
+    var questionsDiv = document.createElement('div');
+    document.querySelector('#content').appendChild(questionsDiv);
+    questionsDiv.setAttribute('id', 'questionsDiv');
+    var questionsOrderedList = document.createElement('ol');
+    document.querySelector('#questionsDiv').appendChild(questionsOrderedList);
+    var orderedListClass = document.querySelector('ol');
+    orderedListClass.classList.add('lists');
+    for (i = 0; i < answersArray.length; i++) {
+        var createdListItem = document.createElement('li');
+        createdListItem.setAttribute('data-answer', answersArray[i]);
+        createdListItem.setAttribute('id', answersArray[i]);
+        questionsOrderedList.appendChild(createdListItem);
+        document.querySelector('li').className = 'list-item-answer';
+        document.getElementById(answersArray[i]).textContent = answersArray[i]
+
+    }
+
+    orderedListClass.addEventListener("click", function() {
+
+        selectedAnswer = event.target.getAttribute('data-answer');
+        alert(selectedAnswer);
+        if (selectedAnswer === "alerts") {
+            alert("Correct");
+            return selectedAnswer;
+        } else {
+            alert("Wrong");
+            return selectedAnswer;
+
+        }
+
+    })
+
+
+}
+
+
+
+
+
+
+document.getElementById('start').onclick = function() {
+    event.preventDefault;
+
+    console.log("clicked");
+    currentPage = 1;
+    if (currentPage === 1) {
+        nextScreen(questions[0], answers1);
+        //add conditions in nextScreen Function
+        currentPage = 2;
+    } else if (currentPage === 2) {
+        nextScreen(questions[1], answers2);
+        currentPage = 3;
+    }
+};
