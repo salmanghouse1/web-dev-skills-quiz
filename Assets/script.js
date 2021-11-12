@@ -61,12 +61,22 @@ function nextScreen(questionsArray, answersArray) {
 
     }
 
+
     orderedListClass.addEventListener("click", function() {
 
         selectedAnswer = event.target.getAttribute('data-answer');
         alert(selectedAnswer);
         if (selectedAnswer === "alerts") {
             alert("Correct");
+
+
+            var answerStatus = document.createElement('h2');
+            orderedListClass.append(answerStatus);
+
+            answerStatus.textContent = "Correct";
+            setTimeout(function() {
+                answerStatus.textContent = "";
+            }, 400);
             return selectedAnswer;
         } else {
             alert("Wrong");
