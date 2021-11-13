@@ -24,6 +24,7 @@ var body = document.querySelector('body');
 
 let questionListItem = ['', '', '', ''];
 
+var score = 0;
 
 var item = "a";
 
@@ -32,6 +33,10 @@ var content = document.querySelector('#content');
 
 questions = ['Commonly used Data Types Do not include...', '', '', '', ''];
 currentPage = 0;
+
+var score = 0;
+
+var time = 100;
 
 function nextScreen(questionsArray, answersArray) {
 
@@ -77,7 +82,7 @@ function nextScreen(questionsArray, answersArray) {
             setTimeout(function() {
                 answerStatus.textContent = "";
             }, 400);
-            return selectedAnswer;
+            return selectedAnswerCorrect;
         } else {
             alert("Wrong");
             return selectedAnswer;
@@ -86,6 +91,18 @@ function nextScreen(questionsArray, answersArray) {
 
     })
 
+
+}
+
+function recalculateScoreOrTime() {
+
+    if (selectedAnswerCorrect) {
+        var score = score + 10;
+
+    } else {
+
+        var time = time - 20;
+    }
 
 }
 
@@ -99,8 +116,16 @@ document.getElementById('start').onclick = function() {
 
     console.log("clicked");
     currentPage = 1;
+
+    setInterval(function() {
+        time--;
+        document.getElementById('time').textContent = time;
+    }, 1000)
+
     if (currentPage === 1) {
         nextScreen(questions[0], answers1);
+        recalculateScoreOrTime(selectedAnswer);
+
         //add conditions in nextScreen Function
         currentPage = 2;
     } else if (currentPage === 2) {
