@@ -47,7 +47,7 @@ function nextScreen(questionsArray, answersArray) {
     var questionsDiv = document.createElement('div');
     document.querySelector('#content').appendChild(questionsDiv);
     questionsDiv.setAttribute('id', 'questionsDiv');
-    var questionsOrderedList = document.createElement('ol');
+    var questionsOrderedList = docgument.createElement('ol');
     document.querySelector('#questionsDiv').appendChild(questionsOrderedList);
     var orderedListClass = document.querySelector('ol');
     orderedListClass.classList.add('lists');
