@@ -120,6 +120,9 @@ document.getElementById('start').onclick = function() {
     setInterval(function() {
         time--;
         document.getElementById('time').textContent = time;
+        if (time === 0) {
+            clearInterval();
+        }
     }, 1000)
 
     if (currentPage === 1) {
