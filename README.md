@@ -2,6 +2,8 @@
 
 This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
+Deployed at https://salmanghouse1.github.io/web-dev-skills-quiz/
+
 ## User Story
 
 ```
@@ -29,6 +31,11 @@ THEN I can save my initials and score
 The following animation demonstrates the application functionality:
 
 ![Demonstration of the Coding Quiz Challenge.](./Assets/screenshot-demo.gif)
+
+
+--
+
+## Made By Salman Ghouse
 
 
 
