@@ -30,3 +30,33 @@ button {
     border-radius: 5px;
     padding: 0 1em 0 1em;
 }
+
+li {
+    background: darkorchid;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 1em 0 1em;
+    margin-top: 5px;
+    text-align: left;
+    width: max-content;
+}
+
+li:hover {
+    background: darkorchid;
+    opacity: .7;
+    border-radius: 5px;
+    padding: 0 1em 0 1em;
+    margin-top: 5px;
+    text-align: left;
+    width: max-content;
+}
+
+li:active {
+    background: purple;
+    opacity: 1.0;
+    border: 2px solid blue;
+}
+
+ol {
+    list-style-position: inside;
+}
