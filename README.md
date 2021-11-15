@@ -2,6 +2,8 @@
 
 This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
+github url:https://github.com/salmanghouse1/web-dev-skills-quiz
+
 Deployed at https://salmanghouse1.github.io/web-dev-skills-quiz/
 
 ## User Story
