@@ -78,14 +78,14 @@ function nextScreen(questionsArray, optionsArray, answer, currentPage) {
     orderedListClass.addEventListener("click", function(event) {
 
         selectedAnswer = event.target.getAttribute('id');
-        alert(selectedAnswer);
+
 
         if (selectedAnswer === event.target.getAttribute('data-answer')) {
-            alert("Correct");
+
             score += 10;
             actionAccordingToAnswer("Correct", currentPage, score, orderedListClass)
         } else {
-            alert("Wrong");
+
             time -= 10;
             actionAccordingToAnswer("Incorrect", currentPage, score, orderedListClass)
         }
@@ -107,7 +107,7 @@ function actionAccordingToAnswer(status, currentPage, score, orderedListClass) {
 // show scores function
 function showScores(name) {
     while (content.firstChild) {
-        alert();
+
         content.removeChild(content.firstChild);
     }
     var heading = document.createElement('h1');
@@ -172,7 +172,7 @@ function inputScoreGameFinished() {
     document.getElementById('submitScoreButton').addEventListener("click", function(event) {
         if (document.getElementById("submitScoreInput").value === "") {
             event.preventDefault();
-            alert("Enter a proper name");
+            alert("Enter your name");
         } else {
             event.preventDefault();
             var name = submitScoreInput.value;
