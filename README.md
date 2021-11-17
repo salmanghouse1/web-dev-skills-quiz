@@ -1,4 +1,22 @@
-Web APIs: Code Quiz
+# Web Dev Skills Quiz
+
+## Purpose
+A web app that quizes you on web development
+
+## Built With
+* HTML
+* CSS
+* Javascript
+
+## Website
+https://github.com/salmanghouse1/web-dev-skills-quiz
+
+## Contribution
+Made with ❤️ by [Salman Ghouse](http://www.salmanwebdeveloper.com)
+
+### ©️2019 Web Dev Skills 
+
+## Code Quiz
 
 This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
