@@ -9,7 +9,7 @@ A web app that quizes you on web development
 * Javascript
 
 ## Website
-https://github.com/salmanghouse1/web-dev-skills-quiz
+https://salmanghouse1.github.io/web-dev-skills-quiz/
 
 ## Contribution
 Made with ❤️ by [Salman Ghouse](http://www.salmanwebdeveloper.com)
